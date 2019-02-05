@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.backgrd {
+  background-image: url("theshow19.jpg");
+  background-size: 200px 200px;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color :black;
+  padding: 20px;
+  text-align: center;
+  font-size: 80px;
+  color: white;
+  text-shadow: 0 0 3px darkred;
+  font-family: impact;
+  background-image: url("darkbaseball.jpg");
+  border-style: solid;
+  border-width: 2px;
+  border-color: darkred;
+
+}
+
+h1 p {
+  font-family: times;
+  font-size: 25px;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 10%;
+  height: 439px; /* only for demonstration, should be removed */
+  background: darkred;
+  padding: 15px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 13px;
+  width: 70%;
+  line-height: 3em;
+}
+
+a {
+  color: yellow;
+}
+
+a:hover {
+  color: black;
+}
+
+#container {
+  position: relative;
+  top: -10px;
+  font-size: 13px;
+  color: yellow;
+}
+
+#submit {
+  background-color: gray;
+  color: black;
+  padding: 5;
+  margin: 8px 0;
+}
+
+#add {
+  background-color: lightblue;
+  color: black;
+  font-size: 13px;
+}
+
+article {
+  float: left;
+  padding: 50px;
+  width: 90%;
+  background-image: url("baseballfieldperfect.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 439px; /* only for demonstration, should be removed */
+  font-family: times;
+  font-size: 25px;
+  color: white;
+  border-right: 2px solid darkred;
+}
+
+article p {
+  color: yellow;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 18px;
+  text-align: left;
+  color: white;
+  background-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-color: darkred;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
